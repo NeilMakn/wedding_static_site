@@ -16,15 +16,15 @@
      <!-- Header and Nav -->
 
     <div class="row">
-      <div class="large-3 columns">
+      <div class="small-3 columns">
         <a href="/"><h1>N + K</h1></a>
       </div>
-      <div class="large-9 columns">
+      <div class="small-9 columns">
         <ul class="button-group right">
-          <li><a href={{ROOT_URL}}/about_us.html class="button">About Us</a></li>
-          <li><a href="#" class="button">FAQ</a></li>
-          <li><a href="#" class="button">The Wedding Day</a></li>
-          <li><a href="#" class="button">Photos</a></li>
+          <li><a href={{ROOT_URL}}/about_us.html class="button">The Couple</a></li>
+          <li><a href={{ROOT_URL}}/location.html class="button">The Wedding Day</a></li>
+          <li><a href={{ROOT_URL}}/faq.html  class="button">FAQ</a></li>
+          <li><a href={{ROOT_URL}}/photos.html  class="button">Photos</a></li>
         </ul>
       </div>
     </div>
@@ -39,13 +39,13 @@
     <!-- Footer -->
 
     <footer class="row">
-      <div class="large-12 columns">
+      <div class="small-12 columns">
         <hr />
         <div class="row">
-          <div class="large-6 columns">
+          <div class="small-6 columns">
             <p>© Copyright no one at all. Go to town.</p>
           </div>
-          <div class="large-6 columns">
+          <div class="small-6 columns">
           </div>
         </div>
       </div>
@@ -54,6 +54,7 @@
 
     <script src="{{ STATIC_URL }}/js/vendor/jquery.js"></script>
     <script src="{{ STATIC_URL }}/js/foundation.min.js"></script>
+    <script src="{{ STATIC_URL }}/js/foundation/foundation.clearing.js"></script>
     <script>
       $(document).foundation();
     </script>

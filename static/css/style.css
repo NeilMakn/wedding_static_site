@@ -5,3 +5,7 @@ body {
 #about_us {
   top: -2343px;
 }
+
+.row {
+  padding: 20px;
+}
