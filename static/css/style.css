@@ -9,3 +9,17 @@ body {
 .row {
   padding: 20px;
 }
+
+background-color {
+  /*color: #FFF9FC;*/
+  color: red;
+}
+
+background: {
+  color:red;
+}
+
+h6 {
+  font-weight: bold;
+}
+
