@@ -1,5 +1,7 @@
 body {
 	font: 14px/1.35em Arial, Helvetica, sans-serif;
+  margin: 60px auto 0;
+  background: #FFF9FC;
 }
 
 #about_us {
@@ -10,9 +12,17 @@ body {
   padding: 20px;
 }
 
-background-color {
-  /*color: #FFF9FC;*/
-  color: red;
+
+
+/*nav bar*/
+
+.fixed {
+  top: 0;
+  height: 60px;
+}
+
+.contain-to-grid {
+  background: white;
 }
 
 background: {
@@ -23,3 +33,7 @@ h6 {
   font-weight: bold;
 }
 
+
+img.img-siz {
+  padding: 5px;
+}
