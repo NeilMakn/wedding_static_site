@@ -19,19 +19,26 @@ function remove_engag_photos(element) {
 
 var filt_engag_photos = engagement_photos.filter(remove_engag_photos);
 
-console.log(filt_engag_photos);
-
-// var i = 0;
-
-// for(i=11; i < 44; i++) {
-
-//     $('ul#loadimg').append('<li><a class="th" href="/static/img/' + [i] + '.jpg"><img src="/static/img/' + [i] + '.jpg"></a></li>');
-// };
-
 
 for (i = 0; i < filt_engag_photos.length; i++ ) {
   $('ul#loadimg').append('<li><a class="th" href="/static/img/' + filt_engag_photos[i] + '.jpg"><img src="/static/img/' + filt_engag_photos[i] + '.jpg"></a></li>');
 
 }
+
+
+// fadein Load
+
+
+$('img').hide();
+$('img').each(function(i) {
+    if (this.complete) {
+        $(this).fadeIn("slow");
+    } else {
+        $(this).load(function() {
+            $(this).fadeIn("slow");
+        });
+    }
+});
+
 
 });
