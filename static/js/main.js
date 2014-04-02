@@ -1,7 +1,32 @@
+$('#up_arrow').hide();
+
 $(document).ready(function() {
+
+  // arrow nav
+
+  var offset = 200;
+  var duration = 500;
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > offset) {
+          $('#up_arrow').fadeIn(duration);
+      } else {
+          $('#up_arrow').fadeOut(duration);
+      }
+  });
+  $('#up_arrow').click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  });
+
 	console.log("Hello!");
 
 
+  jQuery('.back-to-top').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+  })
 
 var engagement_photos = []
 for (i = 11; i <= 44; i++) {
@@ -48,6 +73,7 @@ $('img').each(function(i) {
         });
     }
 });
+
 
 
 });
